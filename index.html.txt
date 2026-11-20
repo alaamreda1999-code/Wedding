@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دعوة خطوبة روان وعبدالظاهر</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            champagne: {
+              50: '#FDFCF7',
+              100: '#F7F1E8',
+              200: '#EFE2D1',
+              300: '#E2CDB3',
+              400: '#D1AF8A',
+              500: '#C5A059',
+              600: '#A7803F',
+              700: '#84622B',
+            },
+            rosewood: '#3A302C',
+            dustyrose: '#D8A7B1',
+            softcream: '#FFFDF9',
+          },
+          fontFamily: {
+            amiri: ['Amiri', 'serif'],
+            tajawal: ['Tajawal', 'sans-serif'],
+            cormorant: ['Cormorant Garamond', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #F7F1E8;
+      color: #3A302C;
+      font-family: 'Tajawal', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Lace Background Pattern */
+    .lace-pattern {
+      background-color: #F7F1E8;
+      background-image: radial-gradient(rgba(197, 160, 89, 0.25) 0.75px, transparent 0.75px), radial-gradient(rgba(197, 160, 89, 0.25) 0.75px, #F7F1E8 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+
+    /* Golden Metallic Shimmer */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #A7803F 0%, #C5A059 40%, #E5C58A 70%, #84622B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* 3D Envelope Transition Styling */
+    .envelope-wrapper {
+      perspective: 1000px;
+    }
+    .envelope-flap {
+      transform-origin: top center;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .envelope-open .envelope-flap {
+      transform: rotateX(180deg);
+    }
+    
+    /* Wax Seal Animation */
+    .wax-seal {
+      box-shadow: 0 10px 25px -5px rgba(132, 98, 43, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+      transition: all 0.3s ease;
+    }
+    .wax-seal:hover {
+      transform: scale(1.06);
+      box-shadow: 0 15px 30px -5px rgba(132, 98, 43, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Canvas Scratch Card Holder */
+    .scratch-container {
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Floating Petals / Hearts Overlay */
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    .petal {
+      position: fixed;
+      pointer-events: none;
+      z-index: 99;
+      animation: floatUp 6s linear infinite;
+    }
+  </style>
+</head>
+<body class="lace-pattern antialiased">
+
+  <!-- ========================================== -->
+  <!-- 2. AMBIENT MUSIC (YOUTUBE STREAM ENGINE)   -->
+  <!-- ========================================== -->
+  <div id="ytPlayerContainer" class="fixed opacity-0 pointer-events-none w-px h-px overflow-hidden -z-50">
+    <div id="ytPlayer"></div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- MAIN INVITATION CONTENT CONTAINER          -->
+  <!-- ========================================== -->
+  <main class="max-w-3xl mx-auto px-4 py-8 md:py-16 space-y-12">
+
+    <!-- HERO / QURANIC VERSE SECTION -->
+    <section class="bg-softcream/90 backdrop-blur border-2 border-champagne-300 rounded-3xl p-6 md:p-12 shadow-xl text-center relative overflow-hidden">
+      
+      <!-- Decorative Floral SVG Corner Ornaments -->
+      <div class="absolute top-0 right-0 w-24 h-24 text-champagne-400/40 pointer-events-none transform translate-x-3 -translate-y-3">
+        <svg fill="currentColor" viewBox="0 0 100 100"><path d="M0 0 Q50 0 50 50 Q0 50 0 0 Z M20 0 Q60 10 60 60 Q10 60 0 20 Z"/></svg>
+      </div>
+      <div class="absolute bottom-0 left-0 w-24 h-24 text-champagne-400/40 pointer-events-none transform -translate-x-3 translate-y-3 rotate-180">
+        <svg fill="currentColor" viewBox="0 0 100 100"><path d="M0 0 Q50 0 50 50 Q0 50 0 0 Z M20 0 Q60 10 60 60 Q10 60 0 20 Z"/></svg>
+      </div>
+
+      <!-- Basmala -->
+      <div class="font-amiri text-2xl md:text-3xl text-champagne-700 mb-4">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ
+      </div>
+
+      <!-- Quranic Verse Box -->
+      <div class="my-6 px-4 py-6 border-y border-champagne-300/70 bg-champagne-50/60 rounded-xl max-w-xl mx-auto">
+        <p id="quranVerseText" class="font-amiri text-xl md:text-2xl leading-loose text-rosewood">
+          "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
+        </p>
+        <span class="block text-xs font-tajawal text-champagne-600 mt-2">[ سورة الروم: 21 ]</span>
+      </div>
+
+      <!-- Parents Greeting -->
+      <p id="familiesText" class="text-sm md:text-base text-rosewood/80 font-tajawal mb-2">
+        نتشرف بدعوتكم
+      </p>
+      
+      <p class="text-xs md:text-sm text-champagne-700 tracking-wider font-semibold uppercase mb-6">
+        لحضور حفل خطوبة
+      </p>
+
+      <!-- Couple Names Header -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-3 my-4">
+        <h1 id="groomNameText" class="font-amiri text-4xl md:text-6xl font-bold gold-gradient-text">عبدالظاهر</h1>
+        <span class="font-cormorant italic text-3xl md:text-5xl text-dustyrose font-bold">&amp;</span>
+        <h1 id="brideNameText" class="font-amiri text-4xl md:text-6xl font-bold gold-gradient-text">روان</h1>
+      </div>
+
+      <div class="w-24 h-1 bg-gradient-to-r from-transparent via-champagne-500 to-transparent mx-auto my-6"></div>
+
+      <p class="text-sm md:text-base text-rosewood/90 leading-relaxed max-w-md mx-auto">
+        تكتمل سعادتنا ويطيب أُنسنا بحضوركم ومشاركتكم لنا أجمل لحظات العمر، ونرجو من الله أن يبارك لنا ولكم.
+      </p>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. INTERACTIVE SCRATCH TO REVEAL DATE     -->
+    <!-- ========================================== -->
+    <section class="bg-softcream/90 backdrop-blur border-2 border-champagne-300 rounded-3xl p-6 md:p-10 shadow-xl text-center">
+      <div class="inline-flex items-center gap-2 text-champagne-700 font-bold mb-2">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <span>بطاقة تفاعلية</span>
+      </div>
+      <h2 class="font-amiri text-2xl md:text-3xl font-bold text-rosewood mb-2">امسح لكشف تاريخ الخطوبة</h2>
+      <p class="text-xs md:text-sm text-rosewood/70 mb-6">استخدم إصبعك أو الماوس لمسح الطبقة الذهبية واكتشاف التاريخ</p>
+
+      <div class="grid grid-cols-3 gap-3 md:gap-6 max-w-md mx-auto">
+        
+        <!-- Day Card -->
+        <div class="flex flex-col items-center">
+          <span class="text-xs text-champagne-700 font-bold mb-1">اليوم</span>
+          <div class="scratch-container w-full aspect-square rounded-2xl overflow-hidden shadow-inner bg-champagne-100 border border-champagne-300 flex items-center justify-center relative">
+            <span id="targetDay" class="font-amiri text-2xl md:text-4xl font-bold text-rosewood">24</span>
+            <canvas id="scratchCanvasDay" class="absolute inset-0 w-full h-full cursor-pointer touch-none z-10"></canvas>
+          </div>
+        </div>
+
+        <!-- Month Card -->
+        <div class="flex flex-col items-center">
+          <span class="text-xs text-champagne-700 font-bold mb-1">الشهر</span>
+          <div class="scratch-container w-full aspect-square rounded-2xl overflow-hidden shadow-inner bg-champagne-100 border border-champagne-300 flex items-center justify-center relative px-1 text-center">
+            <span id="targetMonth" class="font-amiri text-lg md:text-2xl font-bold text-rosewood leading-tight">نوفمبر (11)</span>
+            <canvas id="scratchCanvasMonth" class="absolute inset-0 w-full h-full cursor-pointer touch-none z-10"></canvas>
+          </div>
+        </div>
+
+        <!-- Year Card -->
+        <div class="flex flex-col items-center">
+          <span class="text-xs text-champagne-700 font-bold mb-1">السنة</span>
+          <div class="scratch-container w-full aspect-square rounded-2xl overflow-hidden shadow-inner bg-champagne-100 border border-champagne-300 flex items-center justify-center relative">
+            <span id="targetYear" class="font-amiri text-2xl md:text-4xl font-bold text-rosewood">2026</span>
+            <canvas id="scratchCanvasYear" class="absolute inset-0 w-full h-full cursor-pointer touch-none z-10"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <button id="revealAllBtn" type="button" class="mt-6 text-xs md:text-sm text-champagne-700 underline hover:text-champagne-600 transition-colors">
+        <i class="fa-solid fa-eye text-xs ml-1"></i> كشف التواريخ فوراً
+      </button>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. COUNTDOWN TIMER & SAVE THE DATE        -->
+    <!-- ========================================== -->
+    <section class="bg-gradient-to-br from-champagne-700 via-champagne-600 to-champagne-800 text-white rounded-3xl p-6 md:p-10 shadow-2xl text-center relative overflow-hidden">
+      
+      <h2 class="font-amiri text-2xl md:text-3xl font-bold mb-6">العد التنازلي لليوم الموعود</h2>
+
+      <div class="grid grid-cols-4 gap-2 md:gap-4 max-w-lg mx-auto mb-8">
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-3 border border-white/20">
+          <span id="cdDays" class="block font-amiri text-2xl md:text-4xl font-bold">00</span>
+          <span class="text-[10px] md:text-xs text-yellow-100">يوم</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-3 border border-white/20">
+          <span id="cdHours" class="block font-amiri text-2xl md:text-4xl font-bold">00</span>
+          <span class="text-[10px] md:text-xs text-yellow-100">ساعة</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-3 border border-white/20">
+          <span id="cdMinutes" class="block font-amiri text-2xl md:text-4xl font-bold">00</span>
+          <span class="text-[10px] md:text-xs text-yellow-100">دقيقة</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-3 border border-white/20">
+          <span id="cdSeconds" class="block font-amiri text-2xl md:text-4xl font-bold">00</span>
+          <span class="text-[10px] md:text-xs text-yellow-100">ثانية</span>
+        </div>
+      </div>
+
+      <!-- Save The Date ICS Button -->
+      <button id="saveDateBtn" type="button" class="bg-softcream text-champagne-700 font-bold px-6 py-3 rounded-full shadow-lg hover:bg-white transition-all transform hover:scale-105 inline-flex items-center gap-2 text-sm">
+        <i class="fa-solid fa-calendar-plus"></i>
+        <span>حفظ المناسبة في التقويم (Save the Date)</span>
+      </button>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. VENUE & GOOGLE MAPS DIRECTIONS         -->
+    <!-- ========================================== -->
+    <section class="bg-softcream/90 backdrop-blur border-2 border-champagne-300 rounded-3xl p-6 md:p-10 shadow-xl text-center">
+      <div class="w-14 h-14 rounded-full bg-champagne-100 border border-champagne-400 text-champagne-600 mx-auto flex items-center justify-center mb-4 text-2xl">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+
+      <h2 class="font-amiri text-2xl md:text-3xl font-bold text-rosewood mb-2">مكان وتوقيت الحفل</h2>
+      
+      <p id="venueNameText" class="font-bold text-lg md:text-xl text-champagne-700 mb-1">قاعة السكري</p>
+      <p id="venueAddressText" class="text-sm text-rosewood/80 mb-4">محرم بك - الإسكندرية</p>
+      
+      <div class="inline-block bg-champagne-100 px-4 py-2 rounded-full border border-champagne-300 text-xs md:text-sm font-semibold text-rosewood mb-6">
+        <i class="fa-solid fa-clock text-champagne-600 ml-1"></i>
+        <span id="displayTimeText">الثلاثاء، الساعة 7:00 مساءً</span>
+      </div>
+
+      <!-- Map Action Button -->
+      <div class="mt-2">
+        <a id="googleMapsBtn" href="https://maps.app.goo.gl/HvgMATBdY3Av9WbP8?g_st=ic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-champagne-600 to-champagne-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:from-champagne-700 hover:to-champagne-600 transition-all transform hover:scale-105 text-sm">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>الاتجاهات عبر خرائط جوجل (Get Directions)</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. INTERACTIVE RSVP VIA WHATSAPP          -->
+    <!-- ========================================== -->
+    <section class="bg-softcream/90 backdrop-blur border-2 border-champagne-300 rounded-3xl p-6 md:p-10 shadow-xl text-center relative overflow-hidden">
+      
+      <div class="w-14 h-14 rounded-full bg-champagne-100 border border-champagne-400 text-champagne-600 mx-auto flex items-center justify-center mb-4 text-2xl">
+        <i class="fa-solid fa-paper-plane"></i>
+      </div>
+
+      <h2 class="font-amiri text-2xl md:text-3xl font-bold text-rosewood mb-2">تأكيد الحضور (RSVP)</h2>
+      <p class="text-xs md:text-sm text-rosewood/70 mb-6">يسعدنا حضوركم وتشريفكم لنا، يرجى تأكيد الحضور لترتيب الاستقبال</p>
+
+      <form id="rsvpForm" class="max-w-md mx-auto text-right space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-rosewood mb-1">الاسم الكريم *</label>
+          <input type="text" id="guestName" required placeholder="أدخل اسمك الكريم" class="w-full px-4 py-3 rounded-xl border border-champagne-300 bg-white focus:outline-none focus:ring-2 focus:ring-champagne-500 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-rosewood mb-1">هل ستشرفوننا بالحضور؟ *</label>
+          <select id="attendanceStatus" class="w-full px-4 py-3 rounded-xl border border-champagne-300 bg-white focus:outline-none focus:ring-2 focus:ring-champagne-500 text-sm">
+            <option value="سأحضر بكل سرور وشوق">سأحضر بكل سرور وشوق ✨</option>
+            <option value="أعتذر بشدة لعدم التمكن من الحضور">أعتذر لعدم التمكن من الحضور 🤍</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-rosewood mb-1">عدد الأشخاص المرافقين</label>
+          <input type="number" id="guestCount" min="1" max="10" value="1" class="w-full px-4 py-3 rounded-xl border border-champagne-300 bg-white focus:outline-none focus:ring-2 focus:ring-champagne-500 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-rosewood mb-1">كلمة أو تهنئة للعروسين</label>
+          <textarea id="guestMessage" rows="3" placeholder="اكتب تهنئة لطيفة للعرسان..." class="w-full px-4 py-3 rounded-xl border border-champagne-300 bg-white focus:outline-none focus:ring-2 focus:ring-champagne-500 text-sm"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm mt-4">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>إرسال التأكيد عبر الواتساب</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER COPYRIGHT -->
+    <footer class="text-center text-xs text-rosewood/60 space-y-2 py-6 pb-20">
+      <p>صُنعت بمحبة ودعوات صادقة بالبركة والخير 🤍</p>
+    </footer>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT LOGIC & EASY EDIT CONFIG        -->
+  <!-- ========================================== -->
+  <script>
+    /* ====================================================================
+       EASY CONFIGURATION OBJECT
+       ==================================================================== */
+    const CONFIG = {
+      groomName: "عبدالظاهر",
+      brideName: "روان",
+      familiesGreeting: "نتشرف بدعوتكم",
+      
+      weddingDateISO: "2026-11-24T19:00:00",
+      displayDay: "24",
+      displayMonth: "نوفمبر (11)",
+      displayYear: "2026",
+      displayTime: "الثلاثاء، الساعة 7:00 مساءً",
+
+      venueName: "قاعة السكري",
+      venueAddress: "محرم بك - الإسكندرية",
+      mapsUrl: "https://maps.app.goo.gl/HvgMATBdY3Av9WbP8?g_st=ic",
+
+      whatsappNumber: "201000000000",
+      
+      youtubeVideoId: "V5QcOr5nnw4",
+      songTitle: "أم كلثوم - يا رب تفضل حلاوة سلام أول لقا",
+
+      quranVerse: "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
+    };
+
+    let ytPlayer = null;
+    let isPlayerReady = false;
+    let pendingPlay = false;
+
+    // Load YouTube IFrame API asynchronously
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    window.onYouTubeIframeAPIReady = function() {
+      ytPlayer = new YT.Player('ytPlayer', {
+        height: '1',
+        width: '1',
+        videoId: CONFIG.youtubeVideoId,
+        playerVars: {
+          autoplay: 0,
+          controls: 0,
+          loop: 1,
+          playlist: CONFIG.youtubeVideoId,
+          playsinline: 1,
+          rel: 0,
+          showinfo: 0,
+          modestbranding: 1
+        },
+        events: {
+          onReady: function(event) {
+            isPlayerReady = true;
+            event.target.setVolume(100);
+            if (pendingPlay) {
+              event.target.playVideo();
+            }
+          }
+        }
+      });
+    };
+
+    function playAudioTrack() {
+      if (isPlayerReady && ytPlayer && typeof ytPlayer.playVideo === 'function') {
+        ytPlayer.unMute();
+        ytPlayer.setVolume(100);
+        ytPlayer.playVideo();
+      } else {
+        pendingPlay = true;
+      }
+    }
+
+    function spawnFloatingPetals() {
+      const icons = ["🌸", "✨", "🤍", "🍂"];
+      for (let i = 0; i < 18; i++) {
+        const petal = document.createElement("div");
+        petal.className = "petal text-lg md:text-2xl";
+        petal.innerText = icons[Math.floor(Math.random() * icons.length)];
+        petal.style.left = Math.random() * 100 + "vw";
+        petal.style.bottom = "-40px";
+        petal.style.animationDuration = (4 + Math.random() * 4) + "s";
+        petal.style.animationDelay = (Math.random() * 2) + "s";
+        document.body.appendChild(petal);
+        setTimeout(() => petal.remove(), 8000);
+      }
+    }
+
+    function startCountdown() {
+      const targetTime = new Date(CONFIG.weddingDateISO).getTime();
+
+      function updateTimer() {
+        const now = Date.now();
+        const diff = targetTime - now;
+
+        if (diff <= 0) {
+          document.getElementById("cdDays").innerText = "00";
+          document.getElementById("cdHours").innerText = "00";
+          document.getElementById("cdMinutes").innerText = "00";
+          document.getElementById("cdSeconds").innerText = "00";
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById("cdDays").innerText = String(days).padStart(2, "0");
+        document.getElementById("cdHours").innerText = String(hours).padStart(2, "0");
+        document.getElementById("cdMinutes").innerText = String(minutes).padStart(2, "0");
+        document.getElementById("cdSeconds").innerText = String(seconds).padStart(2, "0");
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    function initScratchCard(canvasId) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      let isDrawing = false;
+
+      function setupCanvas() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        canvas.width = rect.width || 120;
+        canvas.height = rect.height || 120;
+
+        const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+        grad.addColorStop(0, "#D1AF8A");
+        grad.addColorStop(0.5, "#C5A059");
+        grad.addColorStop(1, "#A7803F");
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "rgba(255,255,255,0.85)";
+        ctx.font = "bold 13px Tajawal, sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText("امسح هنا", canvas.width / 2, canvas.height / 2);
+      }
+
+      setupCanvas();
+
+      function scratch(x, y) {
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.beginPath();
+        ctx.arc(x, y, 18, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+          x: clientX - rect.left,
+          y: clientY - rect.top
+        };
+      }
+
+      canvas.addEventListener("mousedown", (e) => {
+        isDrawing = true;
+        const pos = getPos(e);
+        scratch(pos.x, pos.y);
+      });
+      canvas.addEventListener("mousemove", (e) => {
+        if (!isDrawing) return;
+        const pos = getPos(e);
+        scratch(pos.x, pos.y);
+      });
+      window.addEventListener("mouseup", () => { isDrawing = false; });
+
+      canvas.addEventListener("touchstart", (e) => {
+        isDrawing = true;
+        const pos = getPos(e);
+        scratch(pos.x, pos.y);
+      }, { passive: true });
+      canvas.addEventListener("touchmove", (e) => {
+        if (!isDrawing) return;
+        const pos = getPos(e);
+        scratch(pos.x, pos.y);
+      }, { passive: true });
+      window.addEventListener("touchend", () => { isDrawing = false; });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.title = `دعوة خطوبة ${CONFIG.brideName} و${CONFIG.groomName}`;
+      document.getElementById("groomNameText").innerText = CONFIG.groomName;
+      document.getElementById("brideNameText").innerText = CONFIG.brideName;
+      document.getElementById("familiesText").innerText = CONFIG.familiesGreeting;
+      document.getElementById("quranVerseText").innerText = `"${CONFIG.quranVerse}"`;
+      document.getElementById("targetDay").innerText = CONFIG.displayDay;
+      document.getElementById("targetMonth").innerText = CONFIG.displayMonth;
+      document.getElementById("targetYear").innerText = CONFIG.displayYear;
+      document.getElementById("venueNameText").innerText = CONFIG.venueName;
+      document.getElementById("venueAddressText").innerText = CONFIG.venueAddress;
+      document.getElementById("displayTimeText").innerText = CONFIG.displayTime;
+      document.getElementById("googleMapsBtn").href = CONFIG.mapsUrl;
+
+      // Open Envelope Overlay & Trigger Audio Guaranteed
+      const openBtn = document.getElementById("openInvitationBtn");
+      const welcomeOverlay = document.getElementById("welcomeOverlay");
+      if (openBtn && welcomeOverlay) {
+        openBtn.addEventListener("click", () => {
+          playAudioTrack();
+          welcomeOverlay.style.opacity = "0";
+          welcomeOverlay.style.pointerEvents = "none";
+          spawnFloatingPetals();
+          setTimeout(() => {
+            welcomeOverlay.style.display = "none";
+          }, 700);
+        });
+      }
+
+      // Initialize Countdown & Scratch Cards
+      startCountdown();
+      initScratchCard("scratchCanvasDay");
+      initScratchCard("scratchCanvasMonth");
+      initScratchCard("scratchCanvasYear");
+
+      // Reveal All Scratch Cards Button
+      const revealBtn = document.getElementById("revealAllBtn");
+      if (revealBtn) {
+        revealBtn.addEventListener("click", () => {
+          ["scratchCanvasDay", "scratchCanvasMonth", "scratchCanvasYear"].forEach(id => {
+            const c = document.getElementById(id);
+            if (c) c.style.display = "none";
+          });
+          spawnFloatingPetals();
+        });
+      }
+
+      // Save The Date (.ics file download)
+      const saveDateBtn = document.getElementById("saveDateBtn");
+      if (saveDateBtn) {
+        saveDateBtn.addEventListener("click", () => {
+          const icsContent = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "BEGIN:VEVENT",
+            "DTSTART:20261124T170000Z",
+            "DTEND:20261124T210000Z",
+            `SUMMARY:حفل خطوبة ${CONFIG.brideName} و${CONFIG.groomName}`,
+            `LOCATION:${CONFIG.venueName} - ${CONFIG.venueAddress}`,
+            `DESCRIPTION:نتشرف بدعوتكم لحضور حفل خطوبة ${CONFIG.brideName} و${CONFIG.groomName}`,
+            "END:VEVENT",
+            "END:VCALENDAR"
+          ].join("\r\n");
+
+          const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+          const link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = "engagement-invitation.ics";
+          link.click();
+        });
+      }
+
+      // RSVP WhatsApp Form Submission
+      const rsvpForm = document.getElementById("rsvpForm");
+      if (rsvpForm) {
+        rsvpForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("guestName").value.trim();
+          const status = document.getElementById("attendanceStatus").value;
+          const count = document.getElementById("guestCount").value;
+          const msg = document.getElementById("guestMessage").value.trim();
+
+          let text = `السلام عليكم، تأكيد حضور حفل خطوبة ${CONFIG.brideName} و${CONFIG.groomName}:\n`;
+          text += `• الاسم: ${name}\n`;
+          text += `• الحالة: ${status}\n`;
+          text += `• عدد الأفراد: ${count}\n`;
+          if (msg) text += `• تهنئة: ${msg}`;
+
+          const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+          window.open(waUrl, "_blank");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
